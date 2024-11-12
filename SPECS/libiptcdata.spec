@@ -1,6 +1,6 @@
 Name: libiptcdata
 Version: 1.0.5
-Release: 9%{?dist}
+Release: 10%{?dist}
 Summary: IPTC tag library
 
 License: LGPLv2+
@@ -84,6 +84,10 @@ find %{buildroot} -name "*.la" -exec rm -f {} \;
 
 
 %changelog
+* Tue Jul 09 2024 Wim Taymans <wtaymans@redhat.com> - 1.0.5-10
+- Rebuild to get -devel in compose
+- Resolves: RHEL-45353
+
 * Mon Aug 09 2021 Mohan Boddu <mboddu@redhat.com> - 1.0.5-9
 - Rebuilt for IMA sigs, glibc 2.34, aarch64 flags
   Related: rhbz#1991688
